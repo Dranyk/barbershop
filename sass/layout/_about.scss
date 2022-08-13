@@ -7,13 +7,14 @@
     display: flex;
   }
   
-  .about-list {
-    display: flex;
-    flex-shrink: 0;
-  }
-  
   .about__list {
-    margin-right: 64px;
+    display: none;
+
+    @include tab {
+      display: flex;
+      flex-shrink: 0;
+      margin-right: 64px;
+    }
   }
   
   .about-list__item + .about-list__item {
@@ -27,13 +28,19 @@
   .about-wrap__title {
     color: var(--second-title-color);
     margin-bottom: 20px;
+
   }
   
   .about-wrap__after-title {
-    font-size: 18px;
-    line-height: 1.67;
+    font-size: 16px;
+    line-height: calc (28 / 16);
     letter-spacing: 0.02em;
     color: #555555;
+
+    @include desk {
+      font-size: 18px;
+      line-height: calc (30 / 18);
+    }
   }
   
   .about-wrap__text {
