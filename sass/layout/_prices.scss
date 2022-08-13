@@ -4,10 +4,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 84px;
+    padding-bottom: 84px;
     max-width: 1280px;
     margin: 0 auto;
+
+    @include tab {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @include desk {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
   }
   
   .prices-pre-title {
@@ -21,21 +31,40 @@
   }
   
   .price-wrap {
-    display: flex;
-    flex-wrap: wrap;
+
     margin-bottom: 50px;
+
+    @include desk {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   
   .prices-list {
-    width: 50%;
-    padding: 30px 40px;
-  
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    width: 100%;
+    padding: 30px;
+
+    @include desk {
+      width: 50%;
+      padding: 30px 40px;
+      background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+  }
+
+  .prices-list.left {
+    padding-bottom: 10px;
+  }
+
+  .prices-list.right {
+    padding-top: 10px;
   }
   
   .prices-list:nth-child(4n-1),
   .prices-list:nth-child(4n-2) {
-    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    @include desk {
+      background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+
   }
   
   /* .prices-list:nth-child(odd) {
@@ -66,10 +95,15 @@
   }
   
   .prices-text {
-    font-size: 18px;
-    line-height: 1.67;
+    font-size: 14px;
+    line-height: 2.14;
     letter-spacing: 0.02em;
     color: #9da4bd;
+
+    @include desk {
+      font-size: 18px;
+      line-height: 1.67;
+    }
   }
   
   .prices-text:first-child {
