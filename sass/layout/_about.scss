@@ -1,10 +1,22 @@
 .about {
-    padding-top: 139px;
-    padding-bottom: 121px;
+    width: 100%;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    @include tab {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @include desk {
+      padding-top: 139px;
+      padding-bottom: 121px;
+    }
   }
   
   .about__container {
+   @include tab {
     display: flex;
+   }
   }
   
   .about__list {
@@ -12,13 +24,21 @@
 
     @include tab {
       display: flex;
+      flex-direction: column;
       flex-shrink: 0;
+      margin-right: 30px;
+    }
+
+    @include desk {
       margin-right: 64px;
+      flex-direction: row;
     }
   }
   
   .about-list__item + .about-list__item {
-    margin-left: 30px;
+    @include desk {
+      margin-left: 30px;
+    }
   }
   
   .about-wrap__pre-title {

@@ -28,8 +28,11 @@
   }
   
   .nav-list {
-    // display: flex;
     display: none;
+
+    @include tab {
+      display: flex;
+    }
   }
   
   .nav-list__item + .nav-list__item {

@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a href="" class="logo">
@@ -69,10 +69,10 @@
             </button>
             <ul class="mob-menu-list list">
               <li class="mob-menu-list__item">
-                <a href="" class="mob-menu-list__link">О нас</a>
+                <a href="#about" class="mob-menu-list__link">О нас</a>
               </li>
               <li class="mob-menu-list__item">
-                <a href="./portfolio.html" class="mob-menu-list__link"
+                <a href="#prices" class="mob-menu-list__link"
                   >Услуги и цены</a
                 >
               </li>
@@ -108,10 +108,10 @@
           </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <div class="hero-soc">
             <ul class="soc-list list">
@@ -137,20 +137,54 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- About -->
-      <!-- <section class="about section">
+      <section id="about" class="about section">
         <div class="container about__container">
           <ul class="about-list about__list list">
             <li class="about-list__item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/img_1.jpg     1x,
+                    ./images/img_1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img_1-tab.jpg    1x,
+                    ./images/img_1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="330"
+                />
+                <img
                 src="./images/img_1.jpg"
                 alt="барбер бреет шею клиенту"
                 width="270"
                 height="445"
               />
+              </picture>
             </li>
             <li class="about-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/img_2.jpg     1x,
+                    ./images/img_2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+                <source
+                  srcset="
+                    ./images/img_2-tab.jpg    1x,
+                    ./images/img_2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="330"
+                />
               <img
                 src="./images/img_2.jpg"
                 alt="барбер делает кантик"
@@ -158,6 +192,7 @@
                 height="445"
                 class="about-img"
               />
+              </picture>
             </li>
           </ul>
           <div class="about-wrap">
@@ -183,9 +218,9 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Prices -->
-      <!-- <section class="prices section">
+      <section id="prices" class="prices section">
         <div class="container">
           <p class="prices-pre-title pre-title">
             Проведи время в компании лучших мастеров
@@ -231,9 +266,9 @@
           </div>
           <button type="button" class="prices-btn btn">онлайн-запись</button>
         </div>
-      </section> -->
+      </section>
       <!-- Reasons -->
-      <section class="reasons section">
+      <!-- <section class="reasons section">
         <div class="container reasons-container">
           
           <div class="reasons-right">
@@ -270,7 +305,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Masters -->
       <!-- <section id="masters" class="masters">
         <div class="container">
