@@ -16,7 +16,12 @@
   }
   
   .logo_img {
-    fill: currentColor;
+    fill: white;
+    color: white;
+    @include tab {
+      fill: currentColor;
+    }
+
   }
   
   .header__container {
@@ -83,10 +88,15 @@
   
   .menu-open-btn,
   .menu-close-btn {
+    @include desk {
+      display: none;
+    }
+
     width: 40px;
     height: 40px;
     display: block;
     margin-left: auto;
+    margin-right: 30px;
     border: none;
     box-shadow: none;
     border-radius: 0%;
