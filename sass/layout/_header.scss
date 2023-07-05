@@ -56,6 +56,9 @@
   .header-connect {
     margin-left: auto;
     display: none;
+   @include desk {
+    display: flex;
+   }
   }
   
   .header-connect__tel {

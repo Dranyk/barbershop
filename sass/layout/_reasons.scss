@@ -18,7 +18,10 @@
 
 .reasons-left,
 .reasons-right {
-  width: calc((100% - 30px) / 2);
+  @include desk {
+    width: calc((100% - 30px) / 2);
+  }
+
 }
 
 .reasons-left {
