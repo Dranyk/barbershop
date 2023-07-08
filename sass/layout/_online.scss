@@ -1,0 +1,29 @@
+.online-title {
+    color: #ffffff;
+    margin-bottom: 44px;
+}
+
+.online-btn {
+    color: #ffffff;
+    margin-top: 44px;
+}
+
+.online-input,
+.online-text {
+    background-color: rgba($color: #000000, $alpha: 0.0);
+    border: none;
+    border-bottom: 1px solid #9DA4BD;
+    color: rgba($color: #9DA4BD, $alpha: 0.4);
+}
+
+.online-input:focus,
+.online-text:focus {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.online-text {
+    width: 100%;
+    height: 76px;
+    margin-top: 44px;
+}

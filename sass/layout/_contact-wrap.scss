@@ -3,8 +3,33 @@
     background-image: url(../images/online-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+    padding-top: 130px;
     background-size: calc(100% / 2 - 15px);
     .container {
       display: flex;
     }
+  }
+
+  .contact-title {
+    color: #ffffff;
+    margin-left: 100px;
+  }
+
+  .contact-list {
+    margin-left: 100px;
+  }
+
+  .contact-item {
+    display: flex;
+    color: #9DA4BD;
+  }
+
+  .contact-link {
+    color: #9DA4BD;
+  }
+
+  .contact-svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
   }
